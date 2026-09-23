@@ -1,0 +1,8 @@
+{
+  "name": "Remix DLMS Virtual",
+  "description": "Virtual Digital Loudspeaker Management System stereo Web Audio real-time DSP processor with Crossover, EQ, Dynamic Control, and RTA monitoring.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

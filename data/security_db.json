@@ -1,0 +1,116 @@
+{
+  "version": 1,
+  "admin": {
+    "username": "admin",
+    "passwordHash": "687a779161ae00e2d21b1e202a137a9766941169c6b120a588772802259f6b52fcdb525a3f1587b037d3c220e89a75509b8fc918cb92b2dac065e501f81c1ade",
+    "salt": "4bd2de8975bae3067aaaed8cf530fbdd",
+    "createdAt": "2026-09-22T14:05:01.438Z",
+    "updatedAt": "2026-09-22T14:05:01.438Z"
+  },
+  "keys": [
+    {
+      "id": "cd3441bc-b9a7-462a-b437-f3ae770bea2c",
+      "keyCode": "DLMS-3XZU-43PL-98AA",
+      "keyHash": "50ae313b31fba1d6e0aebd4e11868ee55f796af419d8fe981b3182322bbfddf2",
+      "status": "REVOKED",
+      "createdAt": "2026-09-22T14:05:01.438Z",
+      "activatedAt": "2026-09-22T14:05:15.370Z",
+      "userId": "user_aec74c85",
+      "deviceId": "test_browser_123",
+      "revokedAt": "2026-09-22T14:05:26.583Z"
+    },
+    {
+      "id": "e9e7950b-4f03-406a-93fc-6359b599a853",
+      "keyCode": "DLMS-9UDU-U4LA-E957",
+      "keyHash": "cf3fd8994ad524c46cd64e6cbcf32bafa619155ae0b437204239d23caef7fd9b",
+      "status": "UNUSED",
+      "createdAt": "2026-09-22T14:05:01.438Z",
+      "activatedAt": null,
+      "userId": null,
+      "deviceId": null,
+      "revokedAt": null
+    },
+    {
+      "id": "b7cd5d33-4ac2-48f2-a231-9eee7e9fee78",
+      "keyCode": "DLMS-GHZR-LFHS-KXTF",
+      "keyHash": "24469df3a182bf00b701aed9c86596bd1f76c1b5b74e8d494f0bfc9dec81bded",
+      "status": "UNUSED",
+      "createdAt": "2026-09-22T14:05:01.438Z",
+      "activatedAt": null,
+      "userId": null,
+      "deviceId": null,
+      "revokedAt": null
+    }
+  ],
+  "sessions": [
+    {
+      "id": "5cd0498d-d188-49d1-8282-93480d800dc0",
+      "token": "1761b6b7eee5845b6339688d2517ccc992797ac0a8ba07bf5511f6a65d48a7ad",
+      "userId": "user_aec74c85",
+      "role": "user",
+      "deviceId": "test_browser_123",
+      "createdAt": "2026-09-22T14:05:15.370Z",
+      "expiresAt": "2026-10-22T14:05:15.370Z",
+      "lastSeen": "2026-09-22T14:05:21.425Z",
+      "status": "REVOKED"
+    },
+    {
+      "id": "8bd50976-dbd9-4540-ab78-b4a15dd97a93",
+      "token": "c2fa6eea14ce8dc5aa53536a231b8f833a3548443dbeabbbf62d86f3a51b1079",
+      "userId": "admin",
+      "role": "admin",
+      "deviceId": "admin_client",
+      "createdAt": "2026-09-22T14:05:07.182Z",
+      "expiresAt": "2026-09-23T14:05:07.182Z",
+      "lastSeen": "2026-09-22T14:05:34.007Z",
+      "status": "ACTIVE"
+    }
+  ],
+  "auditLogs": [
+    {
+      "id": "b17d11ff-69fe-43d9-ad42-5f00a2119e66",
+      "timestamp": "2026-09-22T14:05:26.584Z",
+      "action": "KEY_REVOKED",
+      "actor": "admin",
+      "result": "SUCCESS",
+      "details": "Revoked key DLMS-3XZU-43PL-98AA and associated sessions",
+      "ip": "127.0.0.1"
+    },
+    {
+      "id": "d820e92e-b647-4b3c-8bbd-27e077fe6499",
+      "timestamp": "2026-09-22T14:05:18.596Z",
+      "action": "KEY_ACTIVATION_ATTEMPT",
+      "actor": "anonymous",
+      "result": "FAILED",
+      "details": "Already used key: DLMS-3XZU-43PL-98AA",
+      "ip": "127.0.0.1"
+    },
+    {
+      "id": "1179f8a6-c777-4b10-b7fa-2ffd0aadb890",
+      "timestamp": "2026-09-22T14:05:15.371Z",
+      "action": "KEY_ACTIVATED",
+      "actor": "user_aec74c85",
+      "result": "SUCCESS",
+      "details": "Key DLMS-3XZU-43PL-98AA activated on device test_browser_123",
+      "ip": "127.0.0.1"
+    },
+    {
+      "id": "d2000608-59d2-43d6-97cd-b7ce3754c731",
+      "timestamp": "2026-09-22T14:05:07.183Z",
+      "action": "ADMIN_LOGIN",
+      "actor": "admin",
+      "result": "SUCCESS",
+      "details": "Admin logged in on device admin_client",
+      "ip": "127.0.0.1"
+    },
+    {
+      "id": "6e4e7eb1-f128-4be3-bd23-13e912518e95",
+      "timestamp": "2026-09-22T14:05:01.438Z",
+      "action": "SYSTEM_INITIALIZED",
+      "actor": "system",
+      "result": "SUCCESS",
+      "details": "Security database seeded with admin 'admin' and 3 initial activation keys",
+      "ip": "127.0.0.1"
+    }
+  ]
+}
